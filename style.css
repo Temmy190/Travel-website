@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.all {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/nature.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* navbar start */
+
+#navbar {
+    background: none;
+    color: white;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #ffa500;
+}
+
+#gallary span,
+#service span,
+#package span,
+#book span {
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.nav-item .nav-link {
+    font-size: 17px;
+    font-weight: 550;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.nav-item .nav-link:hover {
+    background: #ffa500;
+    color: black;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 17px;
+    color: black;
+    transition: 0.2s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #ffa500;
+    color: white;
+}
+
+
+/* navbar-end */
+
+
+/* home-start */
+
+.changecontent::after {
+    content: '';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "France";
+    }
+    10% {
+        content: "Poland";
+    }
+    20% {
+        content: "Spain";
+    }
+    30% {
+        content: "Paris";
+    }
+    40% {
+        content: "United State";
+    }
+    50% {
+        content: "United Kingdom";
+    }
+    60% {
+        content: "Thailand";
+    }
+    80% {
+        content: "Italy";
+    }
+    90% {
+        content: "Germany";
+    }
+    100% {
+        content: "Vietnam";
+    }
+}
+
+.home .content h1 {
+    font-size: 70px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.content a {
+    background-color: white;
+    transition: 0.4s;
+    color: black;
+}
+
+.content a:hover {
+    background: #ffa500;
+    color: white;
+}
+
+.about .container .row img {
+    width: 280px;
+    margin: 50px 0;
+}
+
+
+/* home-end */
+
+
+/* about-start */
+
+
+/* .about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background-a.jpg);
+    width: 1005;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+} */
+
+.about {
+    height: 100vh;
+}
+
+.about h1 span {
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.container .row a {
+    background-color: #ffa500;
+    transition: 0.4s;
+    color: black;
+}
+
+.container .row a:hover {
+    background: #f87800;
+}
+
+
+/* about-end */
+
+
+/* gallar-start */
+
+.gallary .card img {
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+}
+
+.gallary .card img:hover {
+    transform: scale(1.1);
+}
+
+
+/* gallary-end */
+
+
+/* service-start */
+
+.service .service-item i {
+    color: #f87800;
+    transition: 0.5s;
+}
+
+.service .service-item:hover i {
+    color: white;
+}
+
+.service .service-item {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.788);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.service .service-item h5 {
+    text-shadow: 0px 1px 1px rgb(156, 152, 152);
+    transition: 0.5s;
+}
+
+.service .service-item:hover {
+    background: #f87800;
+    color: white;
+}
+
+.service .service-item:hover h5 {
+    color: white;
+}
+
+.service h5,
+.package h5 {
+    color: #f87800;
+    text-shadow: 0px 1px 1px rgb(156, 152, 152);
+}
+
+
+/* service-end */
+
+
+/* package-start */
+
+.package {
+    background: rgb(231, 231, 231);
+}
+
+.package-item {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.788);
+    transition: 0.5s;
+}
+
+.package .package-item:hover {
+    transform: scale(1.1);
+}
+
+
+/* package-end */
+
+
+/* book-start */
+
+.book {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background\ a\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.outlined-input,
+.outlined-textarea,
+.book-btn,
+.read-btn {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #f87800;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.read-btn:hover,
+.book-btn:hover {
+    background-color: #f87800;
+    color: black;
+}
+
+.outlined-input::placeholder,
+.outlined-textarea::placeholder {
+    color: white;
+}
+
+.book .ready {
+    margin-bottom: 70px;
+}
+
+
+/* book-end */
+
+footer {
+    box-shadow: -30px -10px 30px 40px rgb(20, 20, 20);
+}
+
+@media (max-width: 932px) {
+    .home .content h1 {
+        font-size: 30px;
+    }
+    .about .container .row img {
+        width: 200px;
+        margin: 30px 0;
+    }
+    .about h2 {
+        font-size: 22px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .main-text h1 {
+        font-size: 30px;
+    }
+    .book h1 {
+        font-size: 25px;
+    }
+    .book p {
+        font-size: 12px;
+    }
+    .book .read-btn {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    footer h3 {
+        font-size: 22px;
+    }
+    footer li {
+        font-size: 15px;
+    }
+    footer {
+        padding-left: 20px;
+    }
+}
